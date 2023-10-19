@@ -3,58 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Rephyox</title>
+
+  <!-- Icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Style -->
   <style>
 
-    body {
-      background: linear-gradient(180deg, #150032 25.99%, #9D44C0 100%);
-      background-repeat: no-repeat;
-      height: 98.8vh;
-    }
-
   </style>
+
 </head>
 <body>
-
   <!-- Header -->
-  <nav class="nav-bar">
-    <h1>REPHYOX</h1>
 
-    <div class="right-side">
-      <i class="bi bi-list"></i>
-      <div class="nav-links">
-        <ul>
-          <li>Ticket</li>
-          <li>Schedule</li>
-          <li>FAQ</li>
-          <li>Stuff</li>
-        </ul>
+  <section class="header" style="background: linear-gradient(180deg, #150032 23.99%, #9D44C0 100%);">
+    <!-- Navbar -->
+    <nav class="nav-bar">
+      <h1 class="product-name">REPHYOX</h1>
 
-        <button>Login/Register</button>
+      <!-- ul -->
+      <ul class="links-container">
+        <li class="link-item">Ticket</li>
+        <li class="link-item">Schedule</li>
+        <li class="link-item">FAQ</li>
+        <li class="link-item">Stuff</li>
+      </ul>
+
+      <div class="nav-button">
+        <button>Login</button>
+        <button>Register</button>
       </div>
+      
+    </nav>
 
-    </div>
-    
-  </nav>
+    <!-- Isian -->
+    <section class="hero-section">
+      <div class="hero-text-container">
+        <h1 class="hero-header">
+          <span>AUCTION</span> TO THE MOON <br>
+          AND GET THE RARE <span>STUFF</span>
+        </h1>
+        <p class="hero-text">Delve into a world of unparalleled auctions where you can unearth the most unique and valuable items. Our platform offers an exceptional experience for collectors and enthusiasts.</p>
+        <div class="signIn-group">
+          <button class="get-started">Get Started Now</button>
+          <button class="social-media">
+            <img src="./img/Vector.png" alt="" class="socmed-icon">
+          </button>
+          <button class="social-media">
+            <img src="./img/Facebook.png" alt="" class="socmed-icon">
+          </button>
+          <button class="social-media">
+            <img src="./img/Google.png" alt="" class="socmed-icon">
+          </button>
+        </div>
+      </div>
+      <div class="hero-img-container">
+        <img src="./img/Moon.png" alt="" class="hero-img hero-moon">
+        <img src="./img/Mountain.png" alt="" class="hero-img hero-mountain">
+      </div>
+    </section>
 
-  <div class="content">
-    <div class="landing-text-container">
-      <p class="landing-text">
-        <span>AUCTION</span> TO THE MOON <br>AND GET THE RARE <span>STUFF</span>
-      </p>
-      <p>
-        Delve into a world of unparalleled auctions where you can unearth the most unique and valuable items. Our platform offers an exceptional experience for collectors and enthusiasts.
-      </p>
-    </div>
-    
-    <div class="the-moon-container">
-      <div class="the-moon"></div>
-    </div>
-    
-  </div>
+    <!-- Schedule -->
+    <section class="schedule-part">
+      <h1>SCHEDULE</h1>
 
-  
+      <!-- Schedule table -->
+      <table class="schedule-table" style="width: 100%;">
+        <tr class="day">
+          <th class="t-head">Day 1</th>
+          <th class="t-head">Day 2</th>
+          <th class="t-head">Day 3</th>
+          <th class="t-head">Day 4</th>
+          <th class="t-head">Day 5</th>
+        </tr>
+
+        <tr class="second-column">
+          <th class="auction-type">Online Auction</th>
+          <th class="auction-type">Online Auction</th>
+          <th class="auction-type">Online Auction</th>
+          <th class="auction-type">Offline Auction</th>
+          <th class="auction-type">Offline Auction</th>
+        </tr>
+
+        <tr class="location-time">
+          <td class="auction-time">
+            <div class="date">
+              <i class="bi bi-calendar"></i>
+              <p style="margin-top: 4px;" class="date-text">November 8, 2023</p>
+            </div>
+          </td>
+
+          <td class="auction-time">
+            <div class="date">
+              <i class="bi bi-calendar"></i>
+              <p style="margin-top: 4px;" class="date-text">November 9, 2023</p>
+            </div>
+          </td>
+
+          <td class="auction-time">
+            <div class="date">
+              <i class="bi bi-calendar"></i>
+              <p style="margin-top: 4px;" class="date-text">November 10, 2023</p>
+            </div>
+          </td>
+          <td class="auction-time">
+            <div class="date">
+              <i class="bi bi-calendar"></i>
+              <p style="margin-top: 4px;" class="date-text">November 11, 2023</p>
+            </div>
+
+            <div class="date location">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p style="margin-top: 4px;" class="date-text">Istora Senayan</p>
+            </div>
+          </td>
+
+          <td class="auction-time">
+            <div class="date">
+              <i class="bi bi-calendar"></i>
+              <p style="margin-top: 4px;" class="date-text">November 12, 2023</p>
+            </div>
+
+            <div class="date location">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p style="margin-top: 4px;" class="date-text">Usmar Ismail Hall</p>
+            </div>
+          </td>
+        </tr>
+
+      </table>
+    </section>
+  </section>
+
+  <!-- Login part -->
+
+  <section class="login-part">
+    <div class="text-part">
+      
+    </div>
+  </section>
+
 </body>
 </html>
