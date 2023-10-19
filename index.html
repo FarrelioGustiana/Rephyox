@@ -163,18 +163,45 @@
     <div class="login-form">
       <div class="login-input-page">
 
-        <!-- username -->
+        <h1>Login</h1>
 
-        <div class="username-part">
-          <label for="username-input">USERNAME</label>
-          <input type="text" id="username-input" class="username-input">
-        </div>
+        <form id="login-form" class="login-form">
+          <!-- username -->
 
-        <!-- password -->
+          <div class="username-part" id="username">
+            <label for="username-input">USERNAME</label>
+            <input type="text" id="username-input" class="username-input" form="login-form" required>
+          </div>
+
+          <!-- password -->
+          
+          <div class="username-part" id="password">
+            <label for="username-input">PASSWORD</label>
+            <input type="password" id="username-input" class="username-input"  form="login-form" required>
+          </div>
+
+          <!-- Submit login -->
+
+          <input type="submit" value="Login" class="login-submit">
+        </form>
         
-        <div class="username-part">
-          <label for="username-input">PASSWORD</label>
-          <input type="password" id="username-input" class="username-input">
+        <!-- No account -->
+        <p class="no-acc">
+          Don't Have account? <a href="#">Register</a> here
+        </p>
+
+        <!-- Social media login -->
+
+        <div class="signIn-group">
+          <button class="social-media">
+            <img src="./img/Vector.png" alt="" class="socmed-icon">
+          </button>
+          <button class="social-media">
+            <img src="./img/Facebook.png" alt="" class="socmed-icon">
+          </button>
+          <button class="social-media">
+            <img src="./img/Google.png" alt="" class="socmed-icon">
+          </button>
         </div>
       </div>
     </div>
