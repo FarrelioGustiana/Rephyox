@@ -81,6 +81,7 @@ html {
   cursor: pointer;
 }
 
+.login-submit:hover,
 .nav-button button:hover {
   background: linear-gradient(180deg, #F46600 0%, #5B2600 100%);
 }
@@ -305,8 +306,25 @@ html {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  align-items: center;
+  padding: 2em;
+} 
+
+.login-form {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 30px;
+}
+
+.login-input-page h1 {
+  font-family: 'Nicomedia';
+  font-style: italic;
+  color: #531FC8;
+  -webkit-text-stroke: .01px white;
+  font-size: 3em;
 }
 
 .username-part {
@@ -314,6 +332,7 @@ html {
   flex-direction: column;
   row-gap: 3px;
 }
+
 
 .username-part label {
   font-family: 'nicomedia';
@@ -327,4 +346,33 @@ html {
   border: none;
   border-radius: 10px;
   padding: .7em 1em;
+}
+
+.login-submit {
+  padding: .7em 2em;
+  border: none;
+  transition: .5s;
+  background: linear-gradient(180deg, #9F1684 0%, #5B0049 100%);
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: 'Nicomedia';
+  font-style: italic;
+  font-size: .94em;
+}
+
+.no-acc {
+  margin-top: 2%;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.no-acc a {
+  color: #9F1684;
+  text-decoration: none;
+  font-family: 500;
+}
+
+.login-input-page .signIn-group {
+  margin-top: 2%;
 }
