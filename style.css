@@ -34,8 +34,6 @@ html {
   padding: .3em .7em;
   cursor: pointer;
   font-style: italic;
-
-
   background: linear-gradient(179deg, #E7C6D4 19.25%, #DC4D95 56.74%, #642DE6 85.54%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -205,7 +203,6 @@ html {
   row-gap: 10px;
 }
 
-
 .t-head,
 .schedule-part h1 {
   font-family: 'Nicomedia laser';
@@ -223,6 +220,7 @@ html {
   background-color: rgba(255, 255, 255, 0.4);
   padding: .7em 1em;
   border-radius: 10px;
+  border-spacing: 10px;
 }
 
 .date {
@@ -248,4 +246,85 @@ html {
 
 .location-time {
   margin-top: 2%;
+}
+
+/* Login-part */
+
+.login-part {
+  display: flex;
+  align-items: center;
+  padding: 1em 9vw;
+  position: relative;
+  justify-content: space-between;
+  padding-top: 1.5em;
+}
+
+.text-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.text-part .product-name {
+  font-size: 4em;
+  margin: 0;
+}
+
+.text-part .product-type {
+  font-size: 2em;
+  font-family: 'Nicomedia laser';
+  font-style: italic;
+  position: absolute;
+  top: 70%;
+  left: 37%;
+}
+
+.line {
+  position: absolute;
+  height: 20em;
+  width: .5px;
+  background-color: rgba(255, 255, 255, 0.686);
+  right: 0;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-input-page {
+  width: 24em;
+  height: 27em;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.241);
+  border-radius: 15%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.username-part {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.username-part label {
+  font-family: 'nicomedia';
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.username-input {
+  width: 20em;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: .7em 1em;
 }
