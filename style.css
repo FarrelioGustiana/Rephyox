@@ -112,12 +112,15 @@ html {
   letter-spacing: 2.7px;
   word-spacing: 3px;
   line-height: 140%;
+  font-size: 2.5em;
 }
 
 .hero-header span {
   font-family: 'Nicomedia laser';
   font-size: 143%;
   color: #AE118F;
+  letter-spacing: 3.5px;
+  -webkit-text-stroke: .00001px black;
 }
 
 .hero-text {
@@ -210,7 +213,7 @@ html {
   font-style: italic;
   letter-spacing: 4px;
   color: #531FC8;
-  font-size: 2.4em;
+  font-size: 2.7em;
   -webkit-text-stroke: .0001px white;
 }
 
@@ -376,3 +379,124 @@ html {
 .login-input-page .signIn-group {
   margin-top: 2%;
 }
+
+/* Top bids */
+
+.top-bids-section {
+  background: linear-gradient(180deg, #150032 23.99%, #9D44C0 100%);
+  padding: 2em 9vw;
+  font-family: 'jetbrains mono';
+}
+
+.bid-text-container {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.top-bids-title {
+  font-family: 'Nicomedia';
+  color: #D900AE;
+  font-size: 3.5em;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.top-bids-desc {
+  text-align: center;
+  word-spacing: 4px;
+  letter-spacing: 2px;
+  font-size: 1.4em;
+}
+
+.top-b-content {
+  margin-top: 7%;
+}
+
+.top-b-content ol {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5%;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 15px;
+  height: 22em;
+  width: 15em;
+  background-color: rgba(220, 218, 218, 0.333);
+  border: 1.5px solid white;
+  transition: .4s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.385);
+}
+
+.card img {
+  height: 17em;
+  width: 100%;
+}
+
+.above {
+  font-size: 12px;
+  color: rgb(175, 175, 175);
+  padding: 5% 2%;
+}
+
+.one {
+  border-bottom: 1px solid white;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.two {
+  padding-top: 2%;
+}
+
+.two span {
+  color: white;
+  font-size: larger;
+}
+
+/* Bottom */
+
+.bottom {
+  background: linear-gradient(360deg, #150032 23.99%, #9D44C0 100%);
+}
+
+.bottom .text-part {
+  padding: 5% 9vw;
+}
+
+.bottom .product-type-second {
+  position: relative;
+  font-family: 'Nicomedia laser';
+  font-style: italic;
+  font-size: 2.3em;
+  margin: 0;
+  text-align: center;
+  word-spacing: 4px;
+  letter-spacing: 2px;
+}
+
+/* footer */
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(181, 181, 181, 0.234);
+  height: 30vh;
+}
+
