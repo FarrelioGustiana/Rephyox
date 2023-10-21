@@ -336,7 +336,15 @@ html {
   row-gap: 3px;
 }
 
+.remember{
+  display: flex;
+  column-gap: 3px;
 
+}
+.remember label{
+  font-family:Roboto;
+  font-size: 12px;
+}
 .username-part label {
   font-family: 'nicomedia';
   font-size: 1.5em;
