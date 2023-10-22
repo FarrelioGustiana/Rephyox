@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: nicomedia;
+    font-family: Jetbrains mono;
+}
+
+.kotak-login { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    /* border: 0.5px solid white; */
+    backdrop-filter: blur(15px);
+    /* background-color: rgba(242, 242, 242, 0.197); */
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.25);
+}
+
+.login-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.login-value h1 {
+    letter-spacing: 5px;
+    font-family: 'nicomedia';
+    text-align: center;
+    padding-top: 20%;
+    margin-bottom: 20%;
+    font-size: 36px;
+    font-style: italic;
+    color: white;
+    border-bottom: 1px solid;
+    font-weight: 500;
+}
+
+.input-group {
+    padding: 10px;
+}
+
+.input-group input {
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: white;
+    width: 250px;
+    height: 25px;
+    outline: none;
+    padding: 5px 12px;
+    transition: .1s;
+}
+
+.input-group input:focus {
+    border: 3px solid #b36c68;
+    box-shadow: 1px 1px 1px lightpink;
+    outline: 0;
+}
+
+.input-group input::placeholder {
+    color: black;
+}
+
+
+.btn {
+    margin: 25px;
+    
+    width: 60%;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.285);
+    border: 1px solid white;
+}
+
+section {
+    background: linear-gradient(0deg, #9D44C0 -1.09%, #160133 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+
+body {
+    width: 100vw;
+}
+
+img:nth-child(1) {
+    position: absolute;
+    top: 5%; 
+}
+
+img:nth-child(2) {
+    position: absolute;
+}
+
+img:nth-child(3) {
+    position: absolute;
+    top: 75%;
+}
+
+.radio {
+    color: white;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+        .kotak-login { 
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            width: 500px;
+            height: auto;
+            border-radius: 0px;
+            /* border: 0.5px solid white; */
+            backdrop-filter: blur(15px);
+            /* background-color: rgba(242, 242, 242, 0.197); */
+            box-shadow: 5px 10px 15px rgba(0,0,0,0.25);
+        }
+
+        .input-group input {
+            border-radius: 5px;
+            border: 1px solid white;
+            background-color: white;
+            width: 230px;
+            height: 17px;
+            outline: none;
+            padding: 5px 12px;
+        }
+
+        .input-group input:focus
+
+        .input-group input::placeholder {
+            color: black;
+            font-size: 12px;
+        }
+
+
+        .login-value h1 {
+            letter-spacing: 5px;
+            font-family: 'nicomedia';
+            text-align: center;
+            padding-top: 20%;
+            margin-bottom: 20%;
+            font-size: 33px;
+            font-style: italic;
+            color: white;
+            border-bottom: 1px solid;
+            font-weight: 500;
+        }
+
+        img:nth-child(1) {
+            position: absolute;
+            top: 5%; 
+        }
+        
+        img:nth-child(2) {
+            position: absolute;
+        }
+        
+        img:nth-child(3) {
+            position: absolute;
+            top: 75%;
+        }
+        .radio {
+            color: white;
+            font-size: 11px;
+            padding-top: 10px;
+        }
+}
+
+@media only screen and (min-width: 600px) {
+    .kotak-login { 
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 700px;
+        height: auto;
+        border-radius: 0px;
+        /* border: 0.5px solid white; */
+        backdrop-filter: blur(15px);
+        /* background-color: rgba(242, 242, 242, 0.197); */
+        box-shadow: 5px 10px 15px rgba(0,0,0,0.25);
+    }
+
+    .input-group input {
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: white;
+        width: 230px;
+        height: 17px;
+        outline: none;
+        padding: 5px 12px;
+    }
+
+    .input-group input:focus
+
+    .input-group input::placeholder {
+        color: black;
+        font-size: 12px;
+    }
+
+
+    .login-value h1 {
+        letter-spacing: 5px;
+        font-family: 'nicomedia';
+        text-align: center;
+        padding-top: 20%;
+        margin-bottom: 20%;
+        font-size: 33px;
+        font-style: italic;
+        color: white;
+        border-bottom: 1px solid;
+        font-weight: 500;
+    }
+
+    img:nth-child(1) {
+        position: absolute;
+        top: 5%; 
+    }
+    
+    img:nth-child(2) {
+        position: absolute;
+    }
+    
+    img:nth-child(3) {
+        position: absolute;
+        top: 75%;
+    }
+    .radio {
+        color: white;
+        font-size: 11px;
+        padding-top: 10px;
+    }
+}
+}
+
+@media only screen and (min-width: 900px) {
+    .kotak-login { 
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            width: 800px;
+            height: auto;
+            border-radius: 10px;
+            /* border: 0.5px solid white; */
+            backdrop-filter: blur(15px);
+            /* background-color: rgba(242, 242, 242, 0.197); */
+            box-shadow: 5px 10px 15px rgba(0,0,0,0.25);
+        }
+
+        .input-group input {
+            border-radius: 5px;
+            border: 1px solid white;
+            background-color: white;
+            width: 600px;
+            height: 17px;
+            outline: none;
+            padding: 5px 12px;
+        }
+
+        .input-group input:focus
+
+        .input-group input::placeholder {
+            color: black;
+            font-size: 12px;
+        }
+
+
+        .login-value h1 {
+            letter-spacing: 5px;
+            font-family: 'nicomedia';
+            text-align: center;
+            padding-top: 20%;
+            margin-bottom: 20%;
+            font-size: 33px;
+            font-style: italic;
+            color: white;
+            border-bottom: 1px solid;
+            font-weight: 500;
+        }
+
+        img:nth-child(1) {
+            position: absolute;
+            top: 5%; 
+        }
+        
+        img:nth-child(2) {
+            position: absolute;
+        }
+        
+        img:nth-child(3) {
+            position: absolute;
+            top: 75%;
+        }
+        .radio {
+            color: white;
+            font-size: 11px;
+            padding-top: 10px;
+        }
+}
+@media only screen and (min-width: 1200px) {
+    .kotak-login { 
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 400px;
+        height: auto;
+        border-radius: 10px;
+        /* border: 0.5px solid white; */
+        backdrop-filter: blur(15px);
+        /* background-color: rgba(242, 242, 242, 0.197); */
+        box-shadow: 5px 10px 15px rgba(0,0,0,0.25);
+    }
+    
+    .login-value {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .login-value h1 {
+        letter-spacing: 5px;
+        font-family: 'nicomedia';
+        text-align: center;
+        padding-top: 20%;
+        margin-bottom: 20%;
+        font-size: 36px;
+        font-style: italic;
+        color: white;
+        border-bottom: 1px solid;
+        font-weight: 500;
+    }
+    
+    .input-group {
+        padding: 10px;
+    }
+    
+    .input-group input {
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: white;
+        width: 250px;
+        height: 25px;
+        outline: none;
+        padding: 5px 12px;
+        transition: .1s;
+    }
+    
+    .input-group input:focus {
+        border: 3px solid #b36c68;
+        box-shadow: 1px 1px 1px lightpink;
+        outline: 0;
+    }
+    
+    .input-group input::placeholder {
+        color: black;
+    }
+    
+    
+    .btn {
+        margin: 25px;
+        
+        width: 60%;
+        padding: 10px;
+        background-color: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+        border: 1px solid white;
+        color: white;
+    }
+    
+    .btn:hover{
+        background-color: rgba(255, 255, 255, 0.285);
+        border: 1px solid white;
+    }
+    
+    section {
+        background: linear-gradient(0deg, #9D44C0 -1.09%, #160133 100%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+    }
+    
+    body {
+        width: 100vw;
+    }
+    
+    img:nth-child(1) {
+        position: absolute;
+        top: 5%; 
+    }
+    
+    img:nth-child(2) {
+        position: absolute;
+    }
+    
+    img:nth-child(3) {
+        position: absolute;
+        top: 75%;
+    }
+    
+    .radio {
+        color: white;
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    
+}
