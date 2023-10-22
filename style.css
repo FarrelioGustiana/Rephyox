@@ -23,9 +23,17 @@ html {
   left: 0; top: 0; right: 0;
   display: flex;
   align-items: center;
+  column-gap: 5px;
   padding: .8em;
   margin: 0 9vw;
   border-bottom: .1px solid white;
+  overflow: hidden;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-left: 346px;
 }
 
 .product-name {
@@ -43,19 +51,24 @@ html {
 .links-container {
   display: grid;
   grid-template-columns: 80px 100px 70px 70px;
-  margin-left: auto;
+  margin-left: 100px;
   gap: 2px;
 }
 
 .link-item {
   font-size: 14px;
   list-style: none;
-  padding: .5vh;
+  padding: .5em;
   border-radius: 8px;
   text-align: center;
   transition: .5s;
   color: white;
   cursor: pointer;
+}
+
+.link-item a {
+  color: white;
+  text-decoration: none;
 }
 
 .link-item:hover {
@@ -79,6 +92,19 @@ html {
   color: white;
   border-radius: 7px;
   cursor: pointer;
+}
+
+select {
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+  
+}
+
+select option {
+  background:black;
+  outline: none;
 }
 
 .login-submit:hover,
@@ -220,6 +246,7 @@ html {
 /* table */
 
 .schedule-table {
+  font-family: 'jetbrains mono';
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.4);
   padding: .7em 1em;
@@ -252,140 +279,77 @@ html {
   margin-top: 2%;
 }
 
-/* Login-part */
+/* Feature Part */
 
-.login-part {
-  display: flex;
-  align-items: center;
-  padding: 1em 9vw;
-  position: relative;
-  justify-content: space-between;
-  padding-top: 1.5em;
-}
-
-.text-part {
+.feature-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 100%;
 }
 
-.text-part .product-name {
-  font-size: 4em;
-  margin: 0;
+.feature-container ol {
+  margin-top: 2%;
+  list-style: none;
+  display: flex;
+  column-gap: 2.5em;
 }
 
-.text-part .product-type {
-  font-size: 2em;
+.feature-title {
+  margin-top: 5%;
   font-family: 'Nicomedia laser';
-  font-style: italic;
-  position: absolute;
-  top: 70%;
-  left: 37%;
-}
-
-.line {
-  position: absolute;
-  height: 20em;
-  width: .5px;
-  background-color: rgba(255, 255, 255, 0.686);
-  right: 0;
-}
-
-.login-form {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.login-input-page {
-  width: 24em;
-  height: 27em;
-  border: 1px solid white;
-  background-color: rgba(255, 255, 255, 0.241);
-  border-radius: 15%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  align-items: center;
-  padding: 2em;
-} 
-
-.login-form {
-  margin-top: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 30px;
-}
-
-.login-input-page h1 {
-  font-family: 'Nicomedia';
-  font-style: italic;
-  color: #531FC8;
-  -webkit-text-stroke: .01px white;
   font-size: 3em;
+  color: #D900AE;
+  letter-spacing: 3px;
+  word-spacing: 3px;
 }
 
-.username-part {
+.feature-card {
+  height: 20em;
+  width: 14em;
+  background-color: rgba(255, 255, 255, 0.075);
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  row-gap: 3px;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
 }
 
-.remember{
+.feature-img-container {
+  width: 100%;
+  height: 11em;
   display: flex;
-  column-gap: 3px;
-
-}
-.remember label{
-  font-family:Roboto;
-  font-size: 12px;
-}
-.username-part label {
-  font-family: 'nicomedia';
-  font-size: 1.5em;
-  font-style: italic;
+  justify-content: center;
+  align-items: center;
 }
 
-.username-input {
-  width: 20em;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  padding: .7em 1em;
+.feature-card img {
+  height: 8em;
+  width: 8em
 }
 
-.login-submit {
-  padding: .7em 2em;
-  border: none;
-  transition: .5s;
-  background: linear-gradient(180deg, #9F1684 0%, #5B0049 100%);
-  color: white;
-  border-radius: 7px;
-  cursor: pointer;
-  font-family: 'Nicomedia';
-  font-style: italic;
-  font-size: .94em;
+.feature-desc {
+  width: 100%;
+  height: 8em;
+  background: linear-gradient(107deg, #5A1FAF -25.47%, #692BC3 136.15%);
+  padding: 3%;
+  font-family: 'Jetbrains mono';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.no-acc {
-  margin-top: 2%;
-  font-size: 12px;
-  font-style: italic;
+.feature-card-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1em;
 }
 
-.no-acc a {
-  color: #9F1684;
-  text-decoration: none;
-  font-family: 500;
-}
-
-.login-input-page .signIn-group {
-  margin-top: 2%;
+.feature-desc-text {
+  text-align: center;
+  font-size: .8em;
 }
 
 /* Top bids */
@@ -484,6 +448,15 @@ html {
 
 .bottom .text-part {
   padding: 5% 9vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom .product-name {
+  font-size: 3.6em;
+  font-family: 'nicomedia laser';
 }
 
 .bottom .product-type-second {
@@ -507,4 +480,3 @@ html {
   background-color: rgba(181, 181, 181, 0.234);
   height: 30vh;
 }
-
