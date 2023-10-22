@@ -16,131 +16,152 @@ html {
   color: white;
 }
 
+body {
+  background: linear-gradient(360deg, #150032 23.99%, #9D44C0 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 
 /* Navbar Css */
 
 .nav-bar {
-    position: relative;
-    left: 0; top: 0; right: 0;
-    display: flex;
-    align-items: center;
-    padding: .8em;
-    margin: 0 9vw;
-    border-bottom: .1px solid white;
-  }
-  
-  .product-name {
-    font-family: 'Nicomedia', Arial, Helvetica, sans-serif;
-    font-size: 2.3em;
-    padding: .3em .7em;
-    cursor: pointer;
-    font-style: italic;
-    background: linear-gradient(179deg, #E7C6D4 19.25%, #DC4D95 56.74%, #642DE6 85.54%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  
-  .links-container {
-    display: grid;
-    grid-template-columns: 80px 100px 70px 70px;
-    margin-left: auto;
-    gap: 2px;
-  }
-  
-  .link-item {
-    font-size: 14px;
-    list-style: none;
-    padding: .5vh;
-    border-radius: 8px;
-    text-align: center;
-    transition: .5s;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .link-item:hover {
-    background-color: #F79540;
-  }
-  
-  /* Nav Button */
-  
-  .nav-button {
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    column-gap: .8em;
-  }
-  
-  .nav-button button {
-    padding: .7em 1.3vw;
-    border: none;
-    transition: .5s;
-    background: linear-gradient(180deg, #9F1684 0%, #5B0049 100%);
-    color: white;
-    border-radius: 7px;
-    cursor: pointer;
-  }
-  
-  .login-submit:hover,
-  .nav-button button:hover {
-    background: linear-gradient(180deg, #F46600 0%, #5B2600 100%);
-  }
-  
-  body{
-    background: linear-gradient(360deg, #150032 23.99%, #9D44C0 100%);
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
+  position: relative;
+  left: 0; top: 0; right: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: .8em;
+  margin: 0 9vw;
+  border-bottom: .1px solid white;
+  overflow: hidden;
+}
 
-  .container{
-    padding: 5% 9vw;
-  }
+.right {
+  display: flex;
+  align-items: center;
+  margin-left: 346px;
+}
 
-  .container textarea{
-    display: flex;
-    flex-direction: column;
-  }
+.product-name {
+  font-family: 'Nicomedia', Arial, Helvetica, sans-serif;
+  font-size: 2.3em;
+  padding: .3em .7em;
+  cursor: pointer;
+  font-style: italic;
+  background: linear-gradient(179deg, #E7C6D4 19.25%, #DC4D95 56.74%, #642DE6 85.54%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 
-  .submitb{
-    margin-top: 20px;
-    padding: .7em 1.3vw;
-    border: none;
-    transition: .5s;
-    background: linear-gradient(180deg, #9F1684 0%, #5B0049 100%);
-    color: white;
-    border-radius: 7px;
-    cursor: pointer;
-    
-  }
-  .submitb:hover{
-    background: linear-gradient(180deg, #F46600 0%, #5B2600 100%);
-  }
+.links-container {
+  display: grid;
+  grid-template-columns: 80px 100px 70px 70px;
+  margin-left: 100px;
+  gap: 2px;
+}
 
-  .title{
-    font-family: 'Nicomedia laser';
-    font-style: italic;
-    letter-spacing: 4px;
-    color: #531FC8;
-    font-size: 2.7em;
-    -webkit-text-stroke: .0001px white;
-  }
+.link-item {
+  font-size: 14px;
+  list-style: none;
+  padding: .5em;
+  border-radius: 8px;
+  text-align: center;
+  transition: .5s;
+  color: white;
+  cursor: pointer;
+}
 
-  label{
-    font-weight: bold;
-  }
+.link-item a {
+  color: white;
+  text-decoration: none;
+}
 
-  textarea,input{
-    outline: none;
-  }
-  select{
-    color: white;
-    background: none;
-    border: none;
-    outline: none;
-    
-  }
-  select option{
-    background:black;
-    outline: none;
-  }
+.link-item:hover {
+  background-color: #F79540;
+}
+
+/* Nav Button */
+
+.nav-button {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+}
+
+.nav-button button {
+  padding: .7em 1.3vw;
+  border: none;
+  transition: .5s;
+  background: linear-gradient(180deg, #9F1684 0%, #5B0049 100%);
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+select {
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+  
+}
+
+select option {
+  background:black;
+  outline: none;
+}
+
+.login-submit:hover,
+.nav-button button:hover {
+  background: linear-gradient(180deg, #F46600 0%, #5B2600 100%);
+}
+
+.container {
+  padding: 2.5% 9vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 70%;
+}
+
+.title {
+  font-family: 'Nicomedia laser';
+  font-style: italic;
+  letter-spacing: 4px;
+  color: #531FC8;
+  font-size: 2.7em;
+  -webkit-text-stroke: .0001px white;
+}
+
+.cs-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: end;
+}
+
+.submit-container input {
+  padding: .7em 1.3vw;
+  border: none;
+  transition: .5s;
+  background: linear-gradient(180deg, #9F1684 0%, #5B0049 100%);
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.submit-container input:hover {
+  background: linear-gradient(180deg, #F46600 0%, #5B2600 100%);
+}
