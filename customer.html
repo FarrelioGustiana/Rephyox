@@ -3,42 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Customer Service</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="generalMedia.css">
+    <link rel="stylesheet" href="customerSecond.css">
+
 </head>
 <body>
-    <!-- navbar-->
-    <nav class="nav-bar">
-        <h1 class="product-name">REPHYOX</h1>
-  
-        <!-- ul -->
-  
-        <ul class="links-container">
-          <li class="link-item">Ticket</li>
-          <li class="link-item">Schedule</li>
-          <li class="link-item">FAQ</li>
-          <li class="link-item">Stuff</li>
-        </ul>
-        <select name="" id="">
-            <option value="" >English</option>
-            <option value="">Indonesia</option>
-        </select>
-        <div class="nav-button">
-          <button>Login</button>
-          <button>Register</button>
-        </div>
-        
-      </nav>
-  
-    <div class="container">
-        <h1 class="title">Customer Service</h1><br>
-        <form action="">
-            <label for="email">Email :</label>
-            <input type="email" name="" id="email" required><br><br>
-            <label for="text-area">Question :</label><br><br>
-            <textarea  cols="100" rows="10" id="text-area"></textarea>
-            <input class = "submitb"type="submit" value="Send">
-        </form>
+  <!-- Navbar -->
+
+  <nav class="nav-bar">
+    <h1 class="product-name">REPHYOX</h1>
+
+    <!-- Toggler button -->
+
+    <div class="toggler-button">
+      <span></span><span></span><span></span>
     </div>
+
+    <div class="right">
+
+      <!-- ul -->
+
+      <ul class="links-container">
+        <li class="link-item"><a href=""></a>Ticket</li>
+        <li class="link-item"><a href="">Schedule</a></li>
+        <li class="link-item"><a href="./customer.html">Question</a></li>
+        <li class="link-item">Stuff</li>
+      </ul>
+
+      <!-- Select -->
+      <select>
+        <option>English</option>
+        <option>Indonesia</option>
+      </select>
+  
+
+      <div class="nav-button">
+        <button>Login</button>
+        <button>Register</button>
+      </div>
+    </div>
+    
+  </nav>
+
+  <!-- Main -->
+
+  <main class="container">
+    <!-- title -->
+    <h1 class="title">Customer Service</h1>
+
+    <!-- the input -->
+
+    <form class="cs-form">
+      <!-- Email -->
+
+      <div class="input-container">
+        <label for="email-input" required>Email :</label>
+        <input type="email" id="email-input">
+      </div>
+
+      <!-- Text area -->
+
+      <div class="input-container">
+        <label for="text-input">Question :</label>
+        <textarea id="text-input" cols="30" rows="10" required></textarea>
+      </div>
+
+      <div class="submit-container">
+        <input type="submit" value="Send">
+      </div>
+    </form>
+  </main>
+  
+  <script src="script.js"></script>
 </body>
 </html>
