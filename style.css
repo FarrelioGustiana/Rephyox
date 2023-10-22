@@ -33,7 +33,7 @@ html {
 .right {
   display: flex;
   align-items: center;
-  margin-left: 346px;
+  margin-left: 336px;
 }
 
 .product-name {
@@ -292,7 +292,7 @@ select option {
   margin-top: 2%;
   list-style: none;
   display: flex;
-  column-gap: 2.5em;
+  gap: 2.5em;
 }
 
 .feature-title {
@@ -391,7 +391,7 @@ select option {
   list-style: none;
   justify-content: center;
   align-items: center;
-  column-gap: 5%;
+  gap: 5%;
 }
 
 .card {

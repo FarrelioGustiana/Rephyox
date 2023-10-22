@@ -205,3 +205,27 @@ body {
 .login-input-page .signIn-group {
   margin-top: 2%;
 }
+
+@media (max-width: 1200px) {
+  .login-part {
+    flex-direction: column;
+  }
+
+  .text-part {
+    justify-content: flex-start;
+  }
+
+  .line {
+    position: relative;
+    height: .5px;
+    width: 25em;
+    left: 0;
+    bottom: 0;
+  }
+
+  .text-part .product-type {
+    position: absolute;
+    top: 67%;
+    margin-top: 0;
+  }
+}

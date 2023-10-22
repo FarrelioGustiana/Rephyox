@@ -1,9 +1,16 @@
 @media (max-width: 1150px) {
   .right {
-    background-color: #7c2f9b;
+    background-color: #7c2f9b87;
   }
   
   .right.active {
     height: 14em;
+  }
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 1.5em;
+    -webkit-text-stroke: transparent;
   }
 }

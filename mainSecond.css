@@ -1,0 +1,15 @@
+@media (max-width: 1150px) {
+  .right {
+    background-color: rgba(118, 35, 35, 0.618);
+  }
+
+  .right.active {
+    height: 14em;
+  }
+}
+
+@media (max-width: 700px) {
+  .date-container {
+    transform: scale(0.7);
+  }
+}

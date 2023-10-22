@@ -1,0 +1,260 @@
+
+@media (min-width: 1151px) and (max-width: 1500px) {
+
+  .hero-header {
+    font-size: 2em;
+    word-spacing: 2px;
+  }
+  
+  .hero-img {
+    height: 21em;
+  }
+
+  .schedule-table {
+    transform: scale(.9);
+  }
+
+  .t-head {
+    font-size: 1.6em;
+  }
+
+  .auction-type {
+    font-size: 1em;
+  }
+
+  .location-time {
+    font-size: .7em;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1150px) {
+  .hero-img-container {
+    height: 18em;
+  }
+
+  .schedule-part h1,
+  .hero-header {
+    font-size: 1.6em;
+  }
+
+  .hero-img {
+    height: 14em;
+  }
+
+  .hero-text {
+    font-size: .8em;
+  }
+
+  .schedule-table {
+    transform: scale();
+  }
+
+  .t-head {
+    font-size: 1.4em;
+  }
+
+  .auction-type {
+    font-size: .9em;
+  }
+
+  .location-time {
+    font-size: .6em;
+  }
+
+  .feature-title {
+    text-align: center;
+    font-size: 2.3em;
+    color: white;
+  }
+
+  .feature-container ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bid-text-container {
+    font-size: .8em;
+  }
+
+  .card {
+    transform: scale(.9);
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+  .hero-img-container {
+    height: 14em;
+  }
+
+  .schedule-part h1,
+  .hero-header {
+    font-size: 1.3em;
+  }
+
+  .hero-img {
+    height: 10em;
+  }
+
+  .hero-text {
+    font-size: .7em;
+  }
+
+  .social-media {
+    height: 80%;
+  }
+
+  .schedule-table {
+    transform: scale();
+  }
+
+  .t-head {
+    font-size: 1.2em;
+  }
+
+  .auction-type {
+    font-size: .7em;
+  }
+
+  .location-time {
+    font-size: .4em;
+  }
+
+  .feature-title {
+    text-align: center;
+    font-size: 1.7em;
+    color: white;
+  }
+
+  .feature-container ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  .feature-card {
+    height: 14em;
+    width: 9.7em;
+  }
+
+  .feature-desc {
+    height: 5em;
+  }
+
+  .feature-card img {
+    transform: scale(.7);
+  }
+
+  .feature-card-title {
+    font-size: .7em
+  }
+
+  .feature-desc-text {
+    font-size: .4em;
+  }
+
+  .bid-text-container {
+    font-size: .7em;
+  }
+
+  .top-b-content ol {
+    flex-direction: column;
+  }
+
+  .card {
+    transform: scale(.85);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-img-container {
+    height: 12em;
+  }
+
+  .schedule-part h1,
+  .hero-header {
+    font-size: 1.1em;
+  }
+
+  .hero-img {
+    height: 9em;
+  }
+
+  .hero-text {
+    font-size: .6em;
+  }
+
+  .get-started {
+    font-size: .6em;
+  }
+
+  .social-media {
+    height: 75%;
+    padding: .1em .3em;
+    width: 1.4em;
+  }
+
+  .socmed-icon {
+    height: 50%;
+  }
+
+  .schedule-table {
+    transform: scale();
+  }
+
+  .t-head {
+    font-size: 1.2em;
+  }
+
+  .auction-type {
+    font-size: .7em;
+  }
+
+  .location-time {
+    font-size: .4em;
+  }
+
+  .feature-title {
+    text-align: center;
+    font-size: 1.7em;
+    color: white;
+  }
+
+  .feature-container ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  .feature-card {
+    height: 14em;
+    width: 9.7em;
+  }
+
+  .feature-desc {
+    height: 5em;
+  }
+
+  .feature-card img {
+    transform: scale(.7);
+  }
+
+  .feature-card-title {
+    font-size: .7em
+  }
+
+  .feature-desc-text {
+    font-size: .4em;
+  }
+
+  .bid-text-container {
+    font-size: .7em;
+  }
+
+  .top-b-content ol {
+    flex-direction: column;
+  }
+
+  .card {
+    transform: scale(.85);
+  }
+}
