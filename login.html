@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="login.css">
+
+  <!-- Icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  
+</head>
+<body>
+  <!-- Login part -->
+
+  <section class="login-part">
+    <div class="text-part">
+      <p class="product-name">REPHYOX</p>
+      <p class="product-type">A CYBERPUNK AUCTION</p>
+      <div class="line"></div>
+    </div>
+
+    <div class="login-form">
+      <div class="login-input-page">
+
+        <h1>Login</h1>
+
+        <form id="login-form" class="login-form" action="./index.html">
+          <!-- username -->
+
+          <div class="username-part" id="username">
+            <label for="username-input">USERNAME</label>
+            <input type="text" id="username-input" class="username-input" form="login-form" required>
+          </div>
+
+          <!-- password -->
+          
+          <div class="username-part" id="password">
+            <label for="username-input">PASSWORD</label>
+            <input type="password" id="username-input" class="username-input"  form="login-form" required>
+            <div class="remember">
+              <input type="checkbox">
+              <label class="checkbox" for="username">Remember username?</label>
+            </div>
+          </div>
+         
+          <!-- Submit login -->
+          <input href="./index.html" type="submit" value="Login" class="login-submit">
+          
+        </form>
+        
+        <!-- No account -->
+        <p class="no-acc">
+          Don't Have account? <a href="#">Register</a> here
+        </p>
+
+        <!-- Social media login -->
+
+        <div class="signIn-group">
+          <button class="social-media">
+            <img src="./img/Vector.png" class="socmed-icon">
+          </button>
+          <button class="social-media">
+            <img src="./img/Facebook.png" class="socmed-icon">
+          </button>
+          <button class="social-media">
+            <img src="./img/Google.png" class="socmed-icon">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
