@@ -10,41 +10,61 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="generalMedia.css">
 
-  <!-- Style -->
+  <!-- Style Tag -->
   <style>
-    .login-part {
-      background: linear-gradient(360deg, #150032 23.99%, #9D44C0 100%);
+
+    .feature-container {
+      background: linear-gradient(0deg, #150032 23.99%, #9D44C0 100%);
     }
 
     .header {
       height: auto;
     }
+
   </style>
 
 </head>
 <body>
   <!-- Header -->
 
+  <!-- Inline -->
   <section class="header" style="background: linear-gradient(180deg, #150032 23.99%, #9D44C0 100%);">
 
     <!-- Navbar -->
 
-    <nav class="nav-bar">
+    <nav class="nav-bar" id="nav-barr">
       <h1 class="product-name">REPHYOX</h1>
+      
+        <!-- Toggler button -->
 
-      <!-- ul -->
+        <div class="toggler-button">
+          <span></span><span></span><span></span>
+        </div>
 
-      <ul class="links-container">
-        <li class="link-item">Ticket</li>
-        <li class="link-item">Schedule</li>
-        <li class="link-item">FAQ</li>
-        <li class="link-item">Stuff</li>
-      </ul>
+      <div class="right">
 
-      <div class="nav-button">
-        <button>Login</button>
-        <button>Register</button>
+        <!-- ul -->
+
+        <ul class="links-container">
+          <li class="link-item"><a href=""></a>Ticket</li>
+          <li class="link-item"><a href="">Schedule</a></li>
+          <li class="link-item"><a href="./customer.html">Question</a></li>
+          <li class="link-item">Stuff</li>
+        </ul>
+
+        <!-- Select -->
+        <select>
+          <option>English</option>
+          <option>Indonesia</option>
+        </select>
+    
+
+        <div class="nav-button">
+          <button>Login</button>
+          <button>Register</button>
+        </div>
       </div>
       
     </nav>
@@ -142,6 +162,8 @@
 
             <div class="date location">
               <i class="bi bi-geo-alt-fill"></i>
+
+              <!-- Inline -->
               <p style="margin-top: 4px;" class="date-text">Usmar Ismail Hall</p>
             </div>
           </td>
@@ -151,65 +173,78 @@
     </section>
   </section>
 
-  <!-- Login part -->
+  <!-- Feature part -->
+  <section class="feature-container">
+    <h1 class="feature-title">
+      We Provides best Feature for customer
+    </h1>
 
-  <section class="login-part">
-    <div class="text-part">
-      <p class="product-name">REPHYOX</p>
-      <p class="product-type">A CYBERPUNK AUCTION</p>
-      <div class="line"></div>
-    </div>
+    <ol>
+      <!-- First -->
 
-    <div class="login-form">
-      <div class="login-input-page">
-
-        <h1>Login</h1>
-
-        <form id="login-form" class="login-form">
-          <!-- username -->
-
-          <div class="username-part" id="username">
-            <label for="username-input">USERNAME</label>
-            <input type="text" id="username-input" class="username-input" form="login-form" required>
+      <li>
+        <div class="feature-card">
+          <div class="feature-img-container">
+            <img src="./img/DetailEvent.png" alt="">
           </div>
-
-          <!-- password -->
-          
-          <div class="username-part" id="password">
-            <label for="username-input">PASSWORD</label>
-            <input type="password" id="username-input" class="username-input"  form="login-form" required>
-            <div class="remember">
-              <input  type="checkbox" >
-              <label style = "font-size: 15px;letter-spacing:1px;"for="username">Remember username?</label>
-            </div>
+          <div class="feature-desc">
+            <p class="feature-card-title">Details Event</p>
+            <p class="feature-desc-text">
+              Detailed information <br> auctions. Includes <br> the date, location and time of the auction
+            </p>
           </div>
-         
-      
-          <!-- Submit login -->
-
-          <input type="submit" value="Login" class="login-submit">
-        </form>
-        
-        <!-- No account -->
-        <p class="no-acc">
-          Don't Have account? <a href="#">Register</a> here
-        </p>
-
-        <!-- Social media login -->
-
-        <div class="signIn-group">
-          <button class="social-media">
-            <img src="./img/Vector.png" class="socmed-icon">
-          </button>
-          <button class="social-media">
-            <img src="./img/Facebook.png" class="socmed-icon">
-          </button>
-          <button class="social-media">
-            <img src="./img/Google.png" class="socmed-icon">
-          </button>
         </div>
-      </div>
-    </div>
+      </li>
+
+      <!-- Second -->
+
+      <li>
+        <div class="feature-card">
+          <div class="feature-img-container">
+            <img src="./img/Catalogue.png" alt="">
+          </div>
+          <div class="feature-desc">
+            <p class="feature-card-title">Details Event</p>
+            <p class="feature-desc-text">
+              Detailed information auctions. Includes the date, location <br> and time of the auction
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <!-- Third -->
+
+      <li>
+        <div class="feature-card">
+          <div class="feature-img-container">
+            <img src="./img/Remain.png" alt="">
+          </div>
+          <div class="feature-desc">
+            <p class="feature-card-title">Details Event</p>
+            <p class="feature-desc-text">
+              Detailed information auctions. Includes the date, location <br> and time of the auction
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <!-- Fourth -->
+
+      <li>
+        <div class="feature-card">
+          <div class="feature-img-container">
+            <img src="./img/Secured.png" alt="">
+          </div>
+          <div class="feature-desc">
+            <p class="feature-card-title">Details Event</p>
+            <p class="feature-desc-text">
+              Detailed information auctions. Includes the date, location <br> and time of the auction
+            </p>
+          </div>
+        </div>
+      </li>
+      
+    </ol>
   </section>
 
   <!-- Top Bids Section -->
@@ -294,5 +329,6 @@
     </footer>
   </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
