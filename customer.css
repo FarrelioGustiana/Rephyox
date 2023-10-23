@@ -40,7 +40,7 @@ body {
 .right {
   display: flex;
   align-items: center;
-  margin-left: 346px;
+  margin-left: auto;
 }
 
 .product-name {
@@ -57,7 +57,7 @@ body {
 
 .links-container {
   display: grid;
-  grid-template-columns: 80px 100px 70px 70px;
+  grid-template-columns: 80px 100px;
   margin-left: 100px;
   gap: 2px;
 }

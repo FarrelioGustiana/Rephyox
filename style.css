@@ -33,7 +33,7 @@ html {
 .right {
   display: flex;
   align-items: center;
-  margin-left: 336px;
+  margin-left: auto;
 }
 
 .product-name {
@@ -50,7 +50,7 @@ html {
 
 .links-container {
   display: grid;
-  grid-template-columns: 80px 100px 70px 70px;
+  grid-template-columns: 80px 100px;
   margin-left: 100px;
   gap: 2px;
 }
