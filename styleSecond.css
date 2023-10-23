@@ -11,7 +11,7 @@
   }
 
   .schedule-table {
-    transform: scale(.9);
+    transform: scale();
   }
 
   .t-head {
