@@ -1,0 +1,54 @@
+.bottom {
+  background:  linear-gradient(360deg, #150032 23.99%, #9D44C0 100%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bottom .text-part {
+    
+  padding: 1% 9vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center end;
+  align-items: center ;
+}
+
+.bottom .product-name {
+  transform: translateY(70%);
+  font-size: 2.6em;
+  font-family: 'nicomedia laser';
+  padding: .1em ;
+  cursor: pointer;
+  font-style: italic;
+  background: linear-gradient(179deg, #E7C6D4 19.25%, #DC4D95 56.74%, #642DE6 85.54%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.bottom .product-type-second {
+  position: relative;
+  font-family: 'Nicomedia laser';
+  font-style: italic;
+  font-size: 1.3em;
+  margin: 0;
+  text-align: center;
+  word-spacing: 4px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.bottom:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(178, 178, 178, 0.323);
+}
+
+.footer {
+  position: relative;
+  z-index: 3;
+}
