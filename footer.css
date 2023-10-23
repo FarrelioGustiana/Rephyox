@@ -17,8 +17,10 @@
 
 .bottom .product-name {
   transform: translateY(70%);
+  font-variant: normal;
   font-size: 2.6em;
   font-family: 'nicomedia laser';
+  
   padding: .1em ;
   cursor: pointer;
   font-style: italic;
