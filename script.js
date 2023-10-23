@@ -6,3 +6,5 @@ toggler_btn.addEventListener('click', () => {
   toggler_btn.classList.toggle('active');
   right.classList.toggle('active')
 })
+
+console.log('hii');
